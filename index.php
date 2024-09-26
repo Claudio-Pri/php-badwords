@@ -28,6 +28,20 @@
     <span>Il mio nome è</span>
     <span><?php echo $nome; ?></span>
     <span><?php echo $cognome; ?></span>
+    <hr>
+    <div>
+        <form action="./info.php" method="GET">
+            <div>
+                <input type="text" name="first_name" value ="<?php echo $nome ?>" placeholder="inserisci il tuo nome...">
+            </div>
+            <div>
+                <input type="text" name="last_name" value ="<?php echo $cognome ?>" placeholder="inserisci il tuo cognome...">
+            </div>
+            <button type="submit">
+                invia
+            </button>
+        </form>
+    </div>
     <div>
         <a href="./info.php">Info</a>
     </div>

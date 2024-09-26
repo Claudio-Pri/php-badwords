@@ -7,7 +7,12 @@
 </head>
 <body>
     <h1>Info</h1>
-
+    <p>
+        Nome: <?php echo $_GET['first_name'] ?>
+    </p>
+    <p>
+        Cognome: <?php echo $_GET['last_name'] ?>
+    </p>
 
     <div>
         <a href="./index.php"> < Index</a>
