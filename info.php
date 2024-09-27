@@ -8,14 +8,26 @@
 <body>
     <h1>Info</h1>
     <p>
-        Nome: <?php echo $_GET['first_name'] ?>
+        Paragrafo: <?php echo $_GET['paragrafo'] ?>
     </p>
+    <div>
+        Lunghezza del paragrafo: <?php echo strlen($_GET['paragrafo'])  ?>
+    </div>
     <p>
-        Cognome: <?php echo $_GET['last_name'] ?>
+    Parola da censurare: <?php echo $_GET['badword'] ?>
     </p>
-
+    <hr>
+    <p>
+        Paragrafo censurato: <?php echo str_replace($_GET['badword'], '***', $_GET['paragrafo'])  ?>
+    </p>
+    <div>
+        Lunghezza del paragrafo censurato: <?php echo strlen(str_replace($_GET['badword'], '***', $_GET['paragrafo']))  ?>
+    </div>
     <div>
         <a href="./index.php"> < Index</a>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime animi eveniet ipsum et ratione sequi?
+        </p>
     </div>
 </body>
 </html>
